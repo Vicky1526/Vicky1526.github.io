@@ -19,6 +19,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 .headerdiv{
   width: 700px;
@@ -59,7 +60,7 @@ main{
 }
 .container1{
   color: rgb(1,119,103);
-  width: 450px;
+  width: 320px;
   height: 450px;
   background: url("https://instagram.fbud4-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p640x640/21227371_1078630622267594_2872044390317031424_n.jpg?_nc_ht=instagram.fbud4-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=yXsZdRngd2oAX_PtDZ5&oh=cfa37fead153dd39d37a13a9719064d2&oe=5EBFF50D");
   background-repeat: no-repeat;
@@ -75,11 +76,6 @@ main{
 }
 .namediv{
     margin: 0px 0px 20px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    width: auto;
 /*   position: fixed;
   position: absolute; */
 /*   top: 300px; */
@@ -92,7 +88,6 @@ main{
   margin: 0px;
   line-height: 50px;
 }
-
 small{
 /*   background: blue; */
   line-height: 70px;
