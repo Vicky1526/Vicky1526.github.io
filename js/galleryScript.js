@@ -50,8 +50,6 @@ $('#photoDescription').text(imagesData[currentPhoto].description);
 
 function loadPhoto(photoNumber) {
     $('#imgBig').attr('src', imagesData[photoNumber].photo);
-
-
 }
 
 function loadTitle(photoNumber) {
@@ -101,7 +99,7 @@ imagesData.forEach((item, index) => {
     });
 });
 
-
+/*
 function popUp(e) {
     if (e.target.classList.contains("small1")) {
         console.log(e.target);
