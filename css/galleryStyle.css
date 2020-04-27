@@ -69,6 +69,7 @@ aside:hover {
     max-height: 100%;
     width: 100%;
     object-fit: cover;
+    min-width: 400px;
 }
 
 .textHolder {

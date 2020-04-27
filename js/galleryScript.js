@@ -64,6 +64,7 @@ loadPhoto(currentPhoto);
 
 $('#nextArrow').click(() => {
     if (currentPhoto < 5) { currentPhoto++; }
+    if (currentPhoto = 5) { currentPhoto = 0; }
     loadPhoto(currentPhoto);
     loadTitle(currentPhoto);
     loadDescription(currentPhoto);
@@ -71,13 +72,13 @@ $('#nextArrow').click(() => {
 
 $('#backArrow').click(() => {
     if (currentPhoto > 0) { currentPhoto--; }
+    if (currentPhoto = 0) { currentPhoto = 5; }
     loadPhoto(currentPhoto);
     loadTitle(currentPhoto);
     loadDescription(currentPhoto);
 })
 
 loadPhoto(currentPhoto);
-
 
 //bottom part
 imagesData.forEach((item, index) => {
@@ -95,9 +96,41 @@ imagesData.forEach((item, index) => {
         $('.photoHolder img').attr('src', imagesData[indexClicked].photo);
         $('#photoTitle').text(imagesData[indexClicked].title);
         $('#photoDescription').text(imagesData[indexClicked].description);
+        $('#clicked').text(indexClicked);
         currentPhoto = indexClicked;
+
     });
 });
+
+/*
+
+imagesData.forEach((item, index) => {
+
+
+    $('#photoScroll').append(`
+  <div class="imageHolder" data-index="${index}">
+  <img class="small1" id="imgSmall" src =${item.photo} data-index="${index}">
+  <span class="textOver ">${item.title}</span>
+  <p class="smallDescription">${item.description}</p>
+  </div>
+  `);
+    $('.imageHolder').click((event) => {
+        var indexClicked = $(event.target).attr('data-index');
+        // indexClicked is now a string! if you need it as a number you have to change it
+        // because for example "1" + 1 is going to be "11" and not 2
+        var numberIndex = parseInt(indexClicked);
+        // now numberIndex is a number
+        $('#clicked').text(imagesData[indexClicked]);
+    });
+
+
+});
+
+*/
+
+
+
+
 
 /*
 function popUp(e) {
