@@ -17,6 +17,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 1000px;
 }
 
 header {
@@ -72,7 +73,14 @@ main {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    position: relative;
+    /* bottom: 10px; */
 }
+
+
+/* .blockQ {
+    flex-grow: 1;
+} */
 
 .container1 {
     color: rgb(1, 119, 103);
@@ -154,14 +162,11 @@ i {
     background: #225588;
     color: #7FDBFF;
     display: flex;
-    height: auto;
-    /* margin: auto; */
     position: relative;
-    /* margin: 30px 0px 0px 0px; */
-    margin: 50px;
+    margin: 50px 0;
     /*   max-height: 500px; */
-    transform: rotate(90deg);
-    width: auto;
+    /* transform: rotate(90deg); */
+    max-width: 400px;
     height: 220px;
 }
 
@@ -169,7 +174,7 @@ i {
     /* transform: rotate(-90deg); */
     text-transform: uppercase;
     /* width: 220px; */
-    height: auto;
+    /* height: auto; */
     background: #333;
     font-weight: bold;
     display: flex;
@@ -178,8 +183,8 @@ i {
     justify-content: center;
     font-size: 30px;
     line-height: 30px;
-    /* margin: 0px 0px 0px 0px; */
     margin: 50px;
+    padding: 5px;
 }
 
 
