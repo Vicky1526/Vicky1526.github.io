@@ -63,7 +63,7 @@ loadPhoto(currentPhoto);
 
 $('#nextArrow').click(() => {
     if (currentPhoto < 5) { currentPhoto++; }
-    if (currentPhoto === 5) { currentPhoto = 0; }
+    if (currentPhoto === 6) { currentPhoto = 0; }
     loadPhoto(currentPhoto);
     loadTitle(currentPhoto);
     loadDescription(currentPhoto);
@@ -71,7 +71,7 @@ $('#nextArrow').click(() => {
 
 $('#backArrow').click(() => {
     if (currentPhoto > 0) { currentPhoto--; }
-    if (currentPhoto === 0) { currentPhoto = 5; }
+    // if (currentPhoto === 0) { currentPhoto = 5; }
     loadPhoto(currentPhoto);
     loadTitle(currentPhoto);
     loadDescription(currentPhoto);
