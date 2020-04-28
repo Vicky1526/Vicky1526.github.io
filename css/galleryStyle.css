@@ -1,4 +1,5 @@
 body {
+    cursor: context-menu;
     overflow: hidden;
     /* font-family: 'Didact Gothic', sans-serif; */
     font-family: 'Arimo', sans-serif;
@@ -111,7 +112,7 @@ aside:hover {
 
 .imageHolder {
     /* background-color: sandybrown; */
-    display: inline-block;
+    /* display: inline-block; */
     /* margin: 0px 50px 0px 50px; */
     margin: 0px 5px;
     width: 70px;
@@ -153,7 +154,7 @@ aside:hover {
     visibility: visible;
 }
 
-.textOver:after {
+.textOver::after {
     position: absolute;
     bottom: 0;
     left: 50%;

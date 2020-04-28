@@ -34,12 +34,10 @@ var data6 = {
     description: "Sed viverra tellus in hac. Sapien nec sagittis aliquam malesuada bibendum arcu. Eu ultrices vitae auctor eu augue ut lectus arcu bibendum. Ac turpis egestas sed tempus urna et pharetra pharetra massa. Aliquam etiam erat velit scelerisque in dictum. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Ut tortor pretium viverra suspendisse potenti. Orci phasellus egestas tellus rutrum tellus. Ante metus dictum at tempor. Tellus elementum sagittis vitae et leo duis ut. Arcu dui vivamus arcu felis bibendum. Elit pellentesque habitant morbi tristique senectus et. Sit amet porttitor eget dolor morbi.",
 };
 
-
 //single box calling
 /* $('#imgBig').attr('src', data1.photo);
 $('#photoTitle').text(data1.title);
 $('#photoDescription').text(data1.description); */
-
 
 // multiple box calling
 var currentPhoto = 0;
@@ -50,6 +48,7 @@ $('#photoDescription').text(imagesData[currentPhoto].description);
 
 function loadPhoto(photoNumber) {
     $('#imgBig').attr('src', imagesData[photoNumber].photo);
+    //  $('#imgBig').attr('src', imagesData[photoNumber].photo);
 }
 
 function loadTitle(photoNumber) {
@@ -64,7 +63,7 @@ loadPhoto(currentPhoto);
 
 $('#nextArrow').click(() => {
     if (currentPhoto < 5) { currentPhoto++; }
-    if (currentPhoto = 5) { currentPhoto = 0; }
+    if (currentPhoto === 5) { currentPhoto = 0; }
     loadPhoto(currentPhoto);
     loadTitle(currentPhoto);
     loadDescription(currentPhoto);
@@ -72,7 +71,7 @@ $('#nextArrow').click(() => {
 
 $('#backArrow').click(() => {
     if (currentPhoto > 0) { currentPhoto--; }
-    if (currentPhoto = 0) { currentPhoto = 5; }
+    if (currentPhoto === 0) { currentPhoto = 5; }
     loadPhoto(currentPhoto);
     loadTitle(currentPhoto);
     loadDescription(currentPhoto);
@@ -98,39 +97,15 @@ imagesData.forEach((item, index) => {
         $('#photoDescription').text(imagesData[indexClicked].description);
         $('#clicked').text(indexClicked);
         currentPhoto = indexClicked;
-
     });
 });
+
 
 /*
-
-imagesData.forEach((item, index) => {
-
-
-    $('#photoScroll').append(`
-  <div class="imageHolder" data-index="${index}">
-  <img class="small1" id="imgSmall" src =${item.photo} data-index="${index}">
-  <span class="textOver ">${item.title}</span>
-  <p class="smallDescription">${item.description}</p>
-  </div>
-  `);
-    $('.imageHolder').click((event) => {
-        var indexClicked = $(event.target).attr('data-index');
-        // indexClicked is now a string! if you need it as a number you have to change it
-        // because for example "1" + 1 is going to be "11" and not 2
-        var numberIndex = parseInt(indexClicked);
-        // now numberIndex is a number
-        $('#clicked').text(imagesData[indexClicked]);
-    });
-
-
-});
-
+var style = document.createElement('style');
+document.head.appendChild(style);
+style.sheet.insertRule('#backArrow {color: darkseagreen}');
 */
-
-
-
-
 
 /*
 function popUp(e) {
