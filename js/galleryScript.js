@@ -124,3 +124,16 @@ $(document).ready(function() {
     })
 }); 
 */
+
+
+const colorThief = new ColorThief();
+const img = document.getElementById('imgBig');
+
+// Make sure image is finished loading
+if (img.complete) {
+    colorThief.getColor(img);
+} else {
+    image.addEventListener('load', function() {
+        colorThief.getColor(img);
+    });
+}
