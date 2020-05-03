@@ -97,6 +97,7 @@ imagesData.forEach((item, index) => {
         $('#photoDescription').text(imagesData[indexClicked].description);
         $('#clicked').text(indexClicked);
         currentPhoto = indexClicked;
+        $(e.target).addClass("hover")
     });
 });
 
@@ -125,7 +126,7 @@ $(document).ready(function() {
 }); 
 */
 
-
+/*
 const colorThief = new ColorThief();
 const img = document.getElementById('imgBig');
 
@@ -137,3 +138,4 @@ if (img.complete) {
         colorThief.getColor(img);
     });
 }
+*/
