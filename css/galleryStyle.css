@@ -265,8 +265,9 @@ aside:hover {
         text-align: justify;
         padding: 5px 10px;
         position: absolute;
-        bottom: 2px;
+        bottom: 0px;
         left: 0px;
+        /* border-bottom: solid 5px rgba(17, 17, 17, 0.1); */
         /* width: 95.5%; */
     }
     #photoTitle {

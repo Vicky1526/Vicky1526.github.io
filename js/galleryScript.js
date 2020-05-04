@@ -9,7 +9,7 @@ console.log(`Hello, Vicky!`)
 var data1 = {
     photo: "/img/madartavlat-tajkep-termeszet-kreativ.jpg",
     title: "Odio pellentesque diam",
-    description: "Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet.Amet facilisis magna etiam tempor orci eu lobortis elementum.Vulputate enim nulla aliquet porttitor.Non arcu risus quis varius quam quisque id diam.Tristique senectus et netus et malesuada     fames ac.Arcu risus quis varius quam quisque id diam.Duis at tellus at urna condimentum.Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien.Adipiscing diam donec adipiscing tristique risus nec feugiat. Fermentum posuere urna nec tincidunt praesent.Euismod elementum nisi quis eleifend quam adipiscing vitae.",
+    description: "Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet.Amet facilisis magna etiam tempor orci eu lobortis elementum. Vulputate enim nulla aliquet porttitor. Non arcu risus quis varius quam quisque id diam. Tristique senectus et netus et malesuada fames ac. Arcu risus quis varius quam quisque id diam. Duis at tellus at urna condimentum. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Adipiscing diam donec adipiscing tristique risus nec feugiat. Fermentum posuere urna nec tincidunt praesent. Euismod elementum nisi quis eleifend quam adipiscing vitae.",
 };
 var data2 = {
     photo: "/img/eg-erdo-fak-fenseges.jpg",
@@ -100,7 +100,7 @@ imagesData.forEach((item, index) => {
         $('#photoDescription').text(imagesData[indexClicked].description);
         $('#clicked').text(indexClicked);
         currentPhoto = indexClicked;
-        $(e.target).addClass("hover")
+        // $(e.target).addClass("hover")
     });
 });
 
