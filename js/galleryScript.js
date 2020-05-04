@@ -1,6 +1,9 @@
 let name = 'Vicky';
 console.log(`Hello, Vicky!`)
 
+// alert(screen.orientation.type);
+
+
 //top part
 
 var data1 = {
@@ -100,6 +103,7 @@ imagesData.forEach((item, index) => {
         $(e.target).addClass("hover")
     });
 });
+
 
 
 /*
