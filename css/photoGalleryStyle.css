@@ -111,16 +111,17 @@ aside:hover {
     /* background-color: sandybrown; */
     display: inline-block;
     /* margin: 0px 50px 0px 50px; */
-    margin: 0px 5px;
+    margin: 5px 5px;
     width: 70px;
-    height: 70px;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .small1 {
-    border: solid 3px rgba(255, 255, 255, 1);
+    border: solid 3px rgba(243, 243, 243, 1);
+    border-radius: 25%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
     margin: 0px;
     width: 50px;
@@ -252,7 +253,7 @@ aside:hover {
     }
     #imgBig {
         margin: auto;
-        max-height: 80%;
+        /* max-height: 80%; */
         width: 100%;
         object-fit: cover;
     }
@@ -278,6 +279,7 @@ aside:hover {
         line-height: 1.5rem;
     }
     #photoDescription {
+        padding: 0;
         overflow: scroll;
         height: 100%;
         font-family: 'Arimo', sans-serif;
@@ -285,13 +287,14 @@ aside:hover {
         font-size: 0.8rem;
     }
     .photoScroll {
+        overflow: hidden;
         /* background-color: seagreen; */
-        padding: 5px 40px;
+        padding: 5px 30px;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        /* justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        flex-wrap: wrap; */
         position: relative;
         height: 80px;
     }
@@ -299,32 +302,33 @@ aside:hover {
         /* background-color: sandybrown; */
         display: inline-block;
         /* margin: 0px 50px 0px 50px; */
-        margin: 0px 5px;
-        width: 70px;
-        height: 70px;
+        margin: 5px 5px;
+        width: 50px;
+        height: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .small1 {
-        border: solid 3px rgba(255, 255, 255, 1);
+        border: solid 2.3px rgba(243, 243, 243, 1);
+        border-radius: 25%;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
         margin: 0px;
-        width: 50px;
-        height: 50px;
+        width: 43px;
+        height: 43px;
         object-fit: cover;
         text-align: center;
         background-color: rgb(255, 255, 255);
     }
     .imageHolder:hover .small1 {
         cursor: pointer;
-        width: 60px;
-        height: 60px;
+        width: 52px;
+        height: 52px;
     }
     .hover {
         cursor: pointer;
-        width: 60px;
-        height: 60px;
+        width: 53px;
+        height: 53px;
     }
     .hover::before {
         content: "";
@@ -339,36 +343,10 @@ aside:hover {
         /* left: 50%; */
     }
     .textOver {
-        font-size: 0.9rem;
-        visibility: hidden;
-        width: 120px;
-        background-color: rgba(0, 0, 0, 0.9);
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px 8px;
-        position: absolute;
-        bottom: 85px;
-    }
-    .imageHolder:hover .textOver {
-        visibility: visible;
-    }
-    .textOver::before {
-        content: "";
-        position: absolute;
-        width: 0px;
-        height: 0px;
-        border-top: 0.5rem solid rgba(0, 0, 0, 0.9);
-        border-bottom: 0.5rem solid transparent;
-        border-left: 0.5rem solid transparent;
-        border-right: 0.5rem solid transparent;
-        bottom: -0.5rem;
-        left: 50%;
-        margin-left: -0.5rem;
-        margin-bottom: -0.3rem;
+        display: none;
     }
     .smallDescription {
-        visibility: hidden;
+        display: none;
         margin: 0;
         padding: 0;
         width: 0;
