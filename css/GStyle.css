@@ -1,59 +1,79 @@
-/* CSS rules related to orientationchange events */
-
-.running,
-.paused {
-    display: none;
-}
-
-body.landscape {
-    background-color: #F44336;
-    /* red */
-}
-
-body.landscape .paused {
-    display: -webkit-box;
-    display: flex;
-}
-
-body.portrait {
-    background-color: #8BC34A;
-    /* green */
-}
-
-body.portrait .running {
-    display: -webkit-box;
-    display: flex;
-}
-
-
-/* CSS rules to look pretty, unrelated to orientationchange events */
-
-body {
-    margin: 0;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-}
-
-* {
-    font-family: 'Press Start 2P', cursive;
-    -webkit-font-smoothing: antialiased;
-}
-
-.screen {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
-}
-
-.counter {
-    font-size: 3em;
-    margin-bottom: 25px;
+@media screen and (max-width: 600px) {
+    /* CSS rules related to orientationchange events */
+    .running,
+    .paused {
+        display: none;
+    }
+    body.landscape {
+        background-color: #8BC34A;
+    }
+    body.landscape .paused {
+        display: -webkit-box;
+        display: flex;
+    }
+    body.portrait {
+        background-color: #F44336;
+    }
+    body.portrait .running {
+        display: -webkit-box;
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    }
+    /* CSS rules to look pretty, unrelated to orientationchange events */
+    body {
+        /* background-color: lawngreen; */
+        margin: 0px auto;
+        /* display: -webkit-box; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .screen {
+        /* background-color: #fff; */
+        /* margin: 20px auto; */
+        top: 20%;
+        position: absolute;
+        height: 350px;
+        max-width: 350px;
+        padding: 10px;
+        /* top: 20%; */
+        /* -webkit-transform: translate(-50%, -50%); */
+        /* transform: translate(-50%, -50%); */
+        align-items: center;
+        justify-content: center;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+        ;
+    }
+    .counter {
+        display: none;
+        margin: 0;
+        padding: 0;
+        font-size: 0.8rem;
+        margin-bottom: 25px;
+    }
+    .fa {
+        margin: 0;
+        padding: 0;
+        /* background-color: maroon; */
+        transform: rotate(-90deg);
+        font-size: 12rem;
+        -webkit-animation: rotatePortrait 2s steps(5, end) 0s infinite;
+        animation: rotatePortrait 2s steps(5, end) 0s infinite;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes rotatePortrait {
+        0% {
+            transform: rotate(-0deg);
+        }
+    }
 }

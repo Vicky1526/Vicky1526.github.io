@@ -6,17 +6,19 @@ var updateCounter = function() {
         element.innerHTML = counter;
     });
     timeout = setTimeout(updateCounter, 1000);
+    console.log(counter)
 }
+
 
 var orientationQuery = window.matchMedia('(orientation: portrait)');
 
 var orientationHandler = function(portraitOrientation) {
     if (portraitOrientation.matches) {
         document.body.className = 'portrait';
-        updateCounter();
+        clearTimeout(timeout);
     } else {
         document.body.className = 'landscape';
-        clearTimeout(timeout);
+        updateCounter();
     }
 };
 

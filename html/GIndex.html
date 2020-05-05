@@ -6,6 +6,7 @@
     <title>CodePen - Javascript matchMedia()</title>
     <meta name="viewport" content="width=device-width">
     <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/GStyle.css">
 
 </head>
@@ -13,12 +14,14 @@
 <body>
     <!-- partial:index.partial.html -->
     <div class="screen running">
+        <i class="fa fa-mobile"></i>
+        <p>In landscape mode, <br> the counter is paused.</p>
         <div class="counter">0</div>
-        In portrait mode, the counter is running.
+
     </div>
     <div class="screen paused">
+        <p>In portrait mode, the counter is running.</p>
         <div class="counter">0</div>
-        In landscape mode, the counter is paused.
     </div>
     <!-- partial -->
     <script src="/js/GScript.js"></script>
