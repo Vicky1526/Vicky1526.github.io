@@ -196,6 +196,10 @@ aside:hover {
     height: 0;
 }
 
+.hiddenText {
+    display: none;
+}
+
 @media screen and (max-width: 481px) {
     body {
         overflow: hidden;
@@ -287,16 +291,19 @@ aside:hover {
         font-size: 0.8rem;
     }
     .photoScroll {
-        overflow: hidden;
+        overflow-x: scroll;
         /* background-color: seagreen; */
-        padding: 5px 30px;
+        padding: 5px 10px;
         display: flex;
-        flex-direction: column;
-        /* justify-content: center;
+        flex-direction: row;
+        justify-content: flex-start;
         align-items: center;
-        flex-wrap: wrap; */
+        flex-wrap: nowrap;
         position: relative;
+        margin: 0px auto;
+        width: 300px;
         height: 80px;
+        left: 0;
     }
     .imageHolder {
         /* background-color: sandybrown; */
@@ -351,5 +358,8 @@ aside:hover {
         padding: 0;
         width: 0;
         height: 0;
+    }
+    .hiddenText {
+        display: none;
     }
 }
