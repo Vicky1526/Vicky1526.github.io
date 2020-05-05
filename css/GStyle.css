@@ -1,0 +1,59 @@
+/* CSS rules related to orientationchange events */
+
+.running,
+.paused {
+    display: none;
+}
+
+body.landscape {
+    background-color: #F44336;
+    /* red */
+}
+
+body.landscape .paused {
+    display: -webkit-box;
+    display: flex;
+}
+
+body.portrait {
+    background-color: #8BC34A;
+    /* green */
+}
+
+body.portrait .running {
+    display: -webkit-box;
+    display: flex;
+}
+
+
+/* CSS rules to look pretty, unrelated to orientationchange events */
+
+body {
+    margin: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+* {
+    font-family: 'Press Start 2P', cursive;
+    -webkit-font-smoothing: antialiased;
+}
+
+.screen {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.counter {
+    font-size: 3em;
+    margin-bottom: 25px;
+}
