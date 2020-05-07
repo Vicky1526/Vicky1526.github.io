@@ -92,12 +92,32 @@ aside:hover {
 }
 
 #photoDescription {
-    padding: 0;
+    padding: 0 3px 10px 0;
     overflow-y: scroll;
-    height: 100%;
+    height: 75%;
     font-family: 'Arimo', sans-serif;
     margin: 0px;
     font-size: 0.9rem;
+    /* float: left; */
+}
+
+
+/* ScrollBar for desc.*/
+
+#photoDescription::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px rgba(255, 255, 255, .5);
+    background-color: rgba(245, 245, 245, 0);
+    border-radius: 3px;
+}
+
+#photoDescription::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(245, 245, 245, .2);
+}
+
+#photoDescription::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: rgba(57, 204, 204);
 }
 
 .photoScroll {
