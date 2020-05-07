@@ -7,7 +7,7 @@ body {
     flex-direction: row;
     justify-content: center;
     margin: auto;
-    background-color: #a9a9a9;
+    background-color: #bebebe;
     height: 600px;
     /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
 }
@@ -19,7 +19,7 @@ body {
 }
 
 .headPhotoHolder {
-    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
     /* max-height: 400px; */
     /* padding: 100px 0px 0px 0px; */
     display: flex;
@@ -103,19 +103,19 @@ aside:hover {
 /* ScrollBar for desc.*/
 
 #photoDescription::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 10px rgba(255, 255, 255, .5);
-    background-color: rgba(245, 245, 245, 0);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 5px;
 }
 
 #photoDescription::-webkit-scrollbar {
     width: 6px;
-    background-color: rgba(245, 245, 245, .2);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #photoDescription::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background-color: rgba(57, 204, 204, 0.8);
+    background-color: rgba(57, 204, 204, .8);
 }
 
 .photoScroll {
@@ -143,9 +143,9 @@ aside:hover {
 }
 
 .small1 {
-    border: solid 3px rgba(243, 243, 243, 1);
+    border: solid 2px rgba(255, 255, 255, 0.3);
     border-radius: 25%;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
     margin: 0px;
     width: 50px;
     height: 50px;
