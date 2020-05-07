@@ -1,5 +1,5 @@
 let name = 'Vicky';
-console.log(`Hello, Vicky!`)
+console.log(`Hello, ${name}!`)
 
 //top part
 
