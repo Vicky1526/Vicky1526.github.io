@@ -138,7 +138,7 @@ p {
     }
     .page {
         font-family: 'Anonymous Pro', monospace;
-        font-weight: 700;
+        /* font-weight: 600; */
         font-size: 1.2rem;
         line-height: 1.4rem;
     }
