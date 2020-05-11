@@ -45,6 +45,7 @@ var buttonData = [data0, data1, data2, data3, data4]
 console.log(buttonData)
 
 
+
 //bottom part
 buttonData.forEach((item, index) => {
     $(".headerdiv").append(`<div class="buttonHolder">
