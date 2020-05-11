@@ -64,6 +64,7 @@ p {
     }
     .available {
         background-color: rgb(255, 255, 255, .5);
+        border: solid 5px rgb(61, 153, 112);
         border-radius: 60px;
         margin: 0 auto;
         position: absolute;
