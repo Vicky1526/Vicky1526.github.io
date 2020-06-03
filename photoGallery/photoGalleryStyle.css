@@ -1,0 +1,251 @@
+html {
+    height: 100%;
+}
+
+body {
+    /* overflow: hidden; */
+    /* font-family: 'Didact Gothic', sans-serif; */
+    font-family: 'Arimo', sans-serif;
+    /* max-width: 1000px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    background-color: #bebebe;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #403B4A;
+    background-color: #73C8A9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #373B44, #73C8A9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #373B44, #73C8A9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+    /* background-color: thistle; */
+    /* margin: auto; */
+    padding: 100px 0px 100px 0px;
+}
+
+.headPhotoHolder {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+    /* max-height: 400px; */
+    /* padding: 100px 0px 0px 0px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: darkcyan;
+    /* text-align: left; */
+    position: relative;
+    max-width: 1000px;
+}
+
+aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    background-color: rgb(243, 243, 243);
+}
+
+aside:hover {
+    cursor: pointer;
+}
+
+.arrows {
+    font-size: 2.5rem;
+    color: rgb(78, 78, 78);
+}
+
+.photoHolder {
+    max-height: 500px;
+    width: 90%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    text-align: left;
+    position: relative;
+}
+
+#imgBig {
+    margin: auto;
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#infoDiv {
+    background-color: rgba(255, 255, 255, .5);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: solid 2px black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#infoDiv:hover {
+    cursor: pointer;
+    /* opacity: 0%; */
+}
+
+.textHolder {
+    overflow: hidden;
+    height: 70px;
+    background-color: rgba(17, 17, 17, 0.8);
+    color: rgb(57, 204, 204);
+    text-align: justify;
+    padding: 15px 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    /* width: 95.5%; */
+}
+
+#photoTitle {
+    font-family: 'Didact Gothic', sans-serif;
+    margin: 0px;
+    font-size: 1.7rem;
+    padding: 0 0 5px 0px;
+    line-height: 1.5rem;
+}
+
+#photoDescription {
+    padding: 0 3px 10px 0;
+    overflow-y: scroll;
+    height: 75%;
+    font-family: 'Arimo', sans-serif;
+    margin: 0px;
+    font-size: 0.9rem;
+    /* float: left; */
+}
+
+
+/* ScrollBar for desc.*/
+
+#photoDescription::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+}
+
+#photoDescription::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#photoDescription::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(57, 204, 204, .8);
+}
+
+.photoScroll {
+    /* background-color: seagreen; */
+    padding: 5px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    height: 80px;
+}
+
+.imageHolder {
+    /* background-color: sandybrown; */
+    display: inline-block;
+    /* margin: 0px 50px 0px 50px; */
+    margin: 5px 5px;
+    width: 70px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected img {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+
+.small1 {
+    border: solid 2px rgba(255, 255, 255, 0.3);
+    border-radius: 25%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    margin: 0px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+#imgSmall {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+
+.imageHolder:hover .small1 {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+}
+
+.textOver {
+    font-size: 0.9rem;
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 8px;
+    position: absolute;
+    bottom: 85px;
+}
+
+.imageHolder:hover .textOver {
+    visibility: visible;
+}
+
+.textOver::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: 0.5rem solid rgba(0, 0, 0, 0.9);
+    border-bottom: 0.5rem solid transparent;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    bottom: -0.5rem;
+    left: 50%;
+    margin-left: -0.5rem;
+    margin-bottom: -0.3rem;
+}
+
+.smallDescription {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+}
+
+.hiddenText {
+    display: none;
+}
