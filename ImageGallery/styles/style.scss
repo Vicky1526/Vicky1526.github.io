@@ -1,0 +1,15 @@
+@import 'scrollbar';
+@import 'gallery';
+@import 'modal';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1rem;
+    background: rgba(115, 201, 169, 0.6);
+    /* background: -webkit-linear-gradient(to top, #373B44, #73C8A9);
+    background: linear-gradient(to top, #373B44, #73C8A9); */
+}
